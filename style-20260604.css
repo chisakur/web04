@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "LXGW WenKai TC", cursive;
+}
+
+header{
+    background-color: #c4c4c4;
+    width: 100%;
+    padding: 1rem;
+}
+
+header h1{
+    font-size: 2.5rem;
+}
+
+header h1 i{
+    font-size: 3rem;
+}
+
+nav{
+    background-color: #312f2f;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+nav ul li{
+    padding: 0.5rem 0.75rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 1.25rem;
+}
+
+nav ul li a i{
+    font-size: 1.5rem;
+}
+
+@media (max-width: 500px){
+    nav ul{
+        flex-wrap: wrap;
+    }
+
+    nav ul li{
+        padding: 0.15rem 0.5rem;
+    }
+
+    nav ul li a{
+        font-size: 1rem;
+    }
+}
+
+section.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+section.left{
+    padding: 2rem;
+    /* flex-grow: 4;
+    flex-shrink: 1;
+    flex-basis: 350px; */
+    flex: 4 1 350px;
+}
+
+#curve_chart{
+    width: 70vw;
+    height: 50vh;
+}
+
+@media (max-width:480px){
+    #curve_chart{
+        width: 100vw;
+        height: 50vh;
+    }
+}
+
+section.right{ 
+    padding: 2rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.right h5{
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 10px;   
+}
+
+section.right iframe{
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin-top: 10px;
+}
